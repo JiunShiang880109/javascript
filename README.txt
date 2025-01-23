@@ -1,0 +1,3 @@
+javascript學習紀錄
+
+basic-javascript基本語法
