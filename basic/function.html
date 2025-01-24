@@ -1,0 +1,34 @@
+<script>
+    //function 可接受parameter
+
+    function alertx(x){//只是function 需要call這個function才會動作
+        //x是 local variable 在外部無法使用
+        //var x=1;
+        alert('x:'+x);
+    }
+
+    function alerty(x, y, z){
+        var temp=x*y+z-1;
+        alert('temp:'+temp);
+    }
+
+    function calAge(year, birth){
+        var age=year-birth;
+        //alert('I was born at year'+birth+'I am'+age+'years old.');
+        var temp='I was born at year'+birth+'I am'+age+'years old.';
+        return temp;
+    }
+
+    alertx(1);//call function
+    
+    var y=1;
+    alert('y:'+y);
+
+    alerty(2, 3, 5);
+
+    var a=calAge(2019, 1990);
+    var b=calAge(2018, 1980);
+    alert('a:'+a);
+    alert('b:'+b);
+    
+</script>
