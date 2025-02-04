@@ -3,7 +3,21 @@
         name:'jack',
         age:18,
         job:'IT',
+        schools:['School A','School B','School C'],
+        personalStatement: function(){
+            var temp='My name is'+this.name+'and my job is'+this.job;
+            return temp;
+        }
     };
+    
+    //alert(person.schools[0]);
+    
+    var len_School=person.schools.length;
+    for(i=0; i<len_School; i++){
+        alert(person.schools[i]);
+    }
+    
+    var x=person.personalStatement();
+    alert(x);
 
-    alert(person.name);
 </script>
