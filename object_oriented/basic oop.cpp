@@ -18,9 +18,9 @@ class Cat{
     string getName(){
         return this->name;
     }
-    /*string getbark(){
+    string getbark(){
         return this->barking;
-    } */
+    }
 
     void setName(string name){
         if(name.length()>10){
@@ -28,9 +28,9 @@ class Cat{
         }
         this->name=name;
     }
-/*     void setbark(string barking){
+    void setbark(string barking){
         this->barking=barking;
-    } */
+    }
 
    private://私人成員，無法從外部調用
     string name;
@@ -44,7 +44,10 @@ int main() {
     c1.setName("Alice");
     c2.setName("Bob");
     
-    cout<<c1.getName()<<c2.getName()<<endl;//Alice
-    
+    c1.setbark("Meow");
+    c2.setbark("meow");
+
+    cout<<c1.getName()<<":"<<c1.getbark()<<"\n"<<c2.getName()<<":"<<c2.getbark()<<endl;//Alice
+
     return 0;
 }
