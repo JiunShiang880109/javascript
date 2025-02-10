@@ -28,13 +28,16 @@ class Vehicle{
         return this->capacity=capacity;
     }
 
-    void moveForward(int hours){
+    /* void moveForward(int hours){
         this->location=hours;
     }
     void moveBackward(int hours){
         this->location=hours;
-    }
-    
+    } */
+    //改成抽象函數
+    virtual void moveForward(int hours)=0;
+    virtual void moveBackward(int hours)=0;
+
     void pushPassenger(string person){
         this->passengers.push_back(person);
     }

@@ -35,7 +35,7 @@ class Car: public Vehicle{
     //override moveBackward method
     void moveBackward(int hours){
         if(this->engine){
-            this->location-=hours*this->velocity;
+            this->location-=hours*this->velocity;;
             //call parent methoud written in Vehicle class
             //Vehicle::moveBackward(hours);
         }
