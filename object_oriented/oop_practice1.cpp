@@ -44,10 +44,14 @@ class Vehicle{
 
     private:
     string name;
-    int velocity;
-    int location=0;
+    //int velocity;
+    //int location=0;
     vector<string> passengers;
     int capacity;
+
+    protected:
+    int velocity;
+    int location;
         
 };
 

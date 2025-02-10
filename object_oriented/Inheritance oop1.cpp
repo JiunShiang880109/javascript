@@ -18,16 +18,26 @@ class Car: public Vehicle{
     //override moveForward method
     void moveForward(int hours){
         if(this->engine){
+            //this->location+=hours*this->velocity;無法直接使用
+            /*這裡的私有是僅限 Vehicle 自己使用，並不包括繼承他的類別。 
+            而假設今天程式設計師的需求是
+            1.外部 (指實體化出來的物件) 依然不可以直接取用，
+            2.但繼承他的類別中可以使用，
+            這時候你便需要在 Vehicle 對他們使用 protected 這個權限： */
+
+            this->location+=hours*this->velocity;//vehicle的location改成protected就能使用了
+            
             //call parent methoud written in Vehicle class
-            Vehicle::moveForward(hours);
+            //Vehicle::moveForward(hours);
         }
     }
 
     //override moveBackward method
     void moveBackward(int hours){
         if(this->engine){
+            this->location-=hours*this->velocity;
             //call parent methoud written in Vehicle class
-            Vehicle::moveBackward(hours);
+            //Vehicle::moveBackward(hours);
         }
     }
 

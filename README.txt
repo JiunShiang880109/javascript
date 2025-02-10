@@ -12,3 +12,8 @@ javascript學習紀錄
       8.redirection
       9.callback function
       10.debug
+      
+◎object_oriented
+  ●Encapsulation
+  ●inheritance
+  ●polymorphism
