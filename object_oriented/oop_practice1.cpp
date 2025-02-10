@@ -51,15 +51,15 @@ class Vehicle{
         
 };
 
-void showPublicMessage(Vehicle vehicle){
+/* void showPublicMessage(Vehicle vehicle){
     cout<<"["<<vehicle.getName()<<"]"
         <<"vel: "<<vehicle.getVelocity()<<", "
         <<"loc: "<<vehicle.getLocation()<<", "
         <<"#passengers: "<<vehicle.getPassengers().size()
         <<endl;
-}
+} */
 
-int main(){
+/* int main(){
     int hours=10;
 
     Vehicle car("Toyota", 60, 4);
@@ -75,4 +75,4 @@ int main(){
     showPublicMessage(bicycle);
 
     return 0;
-}
+} */
