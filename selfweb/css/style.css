@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
 
 body {
-  margin: 0;
+  margin: 0;/*外邊距，預設0*/
   font-family: "Noto sans TC", sans-serif;
   letter-spacing: 1px;
   color: #333;
   line-height: 1.4;
 }
-
+/*<a>的元素帶有連結的預設樣式，但由於不需要，所以要清除預設。使用tagselector時，要放在最前面才不會覆蓋後面設定*/
 a {
   text-decoration: none;
   color: #000;
@@ -23,7 +23,7 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
-  .wrapper-content {
+/*   .wrapper-content {
     max-width: auto;
   }
 }
@@ -65,7 +65,61 @@ footer {
 .link-text:hover {
   transition: all 0.2s;
   color: #ffb500;
+} */
+ 
+ .wrapper-content{
+  /*box-sizing: border-box;*/
+  max-width: auto;
+
+ }
 }
+
+header,
+.section-primary,
+footer {
+  background-color: #fff5da;
+}
+
+ .header-content{
+  background-color: #fff5da;
+  height: 70px;
+  /*padding-top、right、bottom、left調整元素內所有內容和元素自身的邊界間距*/
+  padding-left:30px;
+  padding-right:30px;
+  /*flex box排版用 flex以後的屬性會換行
+  display是父元素容器*/
+  display: flex;
+  /*justify-content用於決定水平對齊的位置
+  space-between平均分配，左右貼齊父元素*/
+  justify-content:space-between;
+  /*決定垂直對齊的位置。
+  center置中對齊*/
+  align-items:center;
+ }
+
+ .logo{
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 24px;
+  color: #000;
+  text-decoration: underline;
+ }
+
+ .header-nav{
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .nav__text{
+  letter-spacing: 3px;
+ }
+
+ .link-text:hover{
+  /*transition轉場效果*/
+    transition: all 0.5s;
+    color: #ffb500;
+ }
+ 
 
 @media screen and (max-width: 767px) {
   /* header {
