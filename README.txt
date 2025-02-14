@@ -17,3 +17,6 @@ javascript學習紀錄
   ●Encapsulation
   ●inheritance
   ●polymorphism
+
+◎selfweb build
+  ●header build & upload to github
