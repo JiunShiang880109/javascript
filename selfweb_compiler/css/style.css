@@ -23,49 +23,6 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
-/*   .wrapper-content {
-    max-width: auto;
-  }
-}
-
-header,
-.section-primary,
-footer {
-  background-color: #fff5da;
-}
-
-.header-content {
-  width: 100%;
-  background-color: #fff5da;
-  height: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  color: #000;
-  font-size: 24px;
-  text-decoration: underline;
-}
-
-.header-nav {
-  width: 330px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.link-text {
-  letter-spacing: 3px;
-}
-
-.link-text:hover {
-  transition: all 0.2s;
-  color: #ffb500;
-} */
  
  .wrapper-content{
   /*box-sizing: border-box;*/
@@ -242,25 +199,29 @@ footer {
 .primary__text {
   margin-bottom: 25px;
 }
-
+/*button也是使用一致性的樣式*/
 .link-button {
   display: inline-block;
+  /*letter-spacing文字的間距*/
   letter-spacing: 2px;
   background-color: #000;
   color: white;
-  border-radius: 3px;
+  /*border-radius邊角設置越大越圓滑*/
+  border-radius: 20px;
   padding: 10px 20px;
 }
-
+/*鼠標移至button的回饋樣式，其他不同的方式如下
+https://ithelp.ithome.com.tw/articles/10309851*/
 .link-button:hover {
   background-color: #ffb500;
-  transition: all 0.2s;
+  transition: all 0.2s; 
+  
 }
 
 .primary__link-button {
   margin-bottom: 40px;
 }
-
+/*social list*/
 .primary__social {
   width: 150px;
   display: flex;
