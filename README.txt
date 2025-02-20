@@ -18,5 +18,7 @@ javascript學習紀錄
   ●inheritance
   ●polymorphism
 
-◎selfweb build
+◎personalweb build
   ●header build & upload to github
+  ●main build & upload to github
+  ●footer build & upload to github but some features are not fully developed.
