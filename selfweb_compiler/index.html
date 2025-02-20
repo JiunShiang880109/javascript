@@ -20,13 +20,13 @@
         <!--統一在每個區塊最外層設置wrapper-content包住內容，這樣內部元素寬度使用百分比的話，只要控制最外層的大小，裡面的內容就會去自動縮放。-->
         <div class="header-content wrapper-content">
             <!--h1~h6代表區塊中的標題-->
-            <h1 class="logo">Jiun Shiang</h1>
+            <h1 id=1 class="logo">Jiun Shiang</h1>
             <!--nab用來建立導覽連結區塊，也就是所謂的menu-->
             <nav class="header-nav">
                 <!--<a>超連結-->
-                <a href="" class="link__text">HOME</a>
-                <a href="" class = link__text>ABOUT</a>
-                <a href="" class = link__text>WORKS</a>
+                <a href="#1" class="link__text">HOME</a>
+                <a href="#2" class = link__text>ABOUT</a>
+                <a href="#3" class = link__text>WORKS</a>
             </nav>
         </div>
     </header>
@@ -43,12 +43,12 @@
                     <p class="primary__text">I'm a back-end learner based in Taiwan.<br>
                         Now I'm currently learning to build a personal website.
                    </p>
-                    <a href="" class="primary__link-button link-button">View Works</a>
+                    <a href="#3" class="primary__link-button link-button">View Works</a>
                     <div class="primary__social">
                         <img src="assets/images/github.png" alt="">
-                        <img src="assets/images/codepen.png" alt="">
                         <img src="assets/images/facebook.png" alt="">
-                        <img src="assets/images/medium.png" alt="">
+                        <!--<img src="assets/images/codepen.png" alt="">
+                        <img src="assets/images/medium.png" alt="">-->
                     </div>
                 </div>
                 <img class="primary__main-img" src="assets/images/headerimg.png" alt="">
@@ -56,7 +56,7 @@
         </section>
         <section class="section-selected-works">
             <div class="secondary-content wrapper-content">
-                <h2 class="secondary__title section__title">Selected works</h2>
+                <h2 id=3 class="secondary__title section__title">Selected works</h2>
 
                 <div class="wrapper-selected-works">
                     <div class="wrapper-work">
@@ -84,69 +84,60 @@
         </section>
         <section class="section-about">
             <div class="secondary-content wrapper-content">
-                <h2 class="secondary__title section__title">About</h2>
+                <h2 id="2" class="secondary__title section__title">About</h2>
                 <div class="wrapper-about">
                     <img class="about__img" src="assets/images/me-big1.png" alt="">
                     <div class="wrapper-about-text">
-                        ...(文字介紹)
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--        
-        <section class="section-about">
-            <div class="secondary-content wrapper-content">
-                <h2 class="secondary__title section__title">About</h2>
-                <div class="wrapper-about">
-                    <img class="about__img" src="assets/images/me-big.png" alt="">
-                    <div class="wrapper-about-text">
-                        <p>
-                            我主要的專長是程式開發，曾經嘗試過網頁/APP、遊戲開發。目前我則專注於網頁、APP前端領域，並且持續學習更多有關UI/UX、AI人工智慧的知識。</p>
+                        <p>我學士畢業於南臺科技大學-資訊工程系，碩士畢業於高雄科技大學-電子工程系資訊組，
+                            主要是學習程式語言開發居多。</p>
                         <div class="about__title">Used Technologies</div>
                         <ul class="about__skill-list">
                             <li class="about__skill-item">Git/Github</li>
-                            <li class="about__skill-item">Vue</li>
-                            <li class="about__skill-item">C/C++/C#</li>
-                            <li class="about__skill-item">JavaScript</li>
-                            <li class="about__skill-item">React</li>
+                            <li class="about__skill-item">c++</li>
+                            <li class="about__skill-item">python</li>
+                            <li class="about__skill-item">SQL</li>
                         </ul>
                         <div class="about__title">Learning now</div>
                         <ul class="about__skill-list">
-                            <li class="about__skill-item">Typescript</li>
-                            <li class="about__skill-item">Python</li>
+                            <li class="about__skill-item">Java</li>
+                            <li class="about__skill-item">javascript</li>
                         </ul>
                         <a href="" class="about__link-button link-button">More About Me</a>
                     </div>
-                </div>
+                    
             </div>
-        </section> -->
+        </section>
+
     </main>
     <footer>
-  <!--       <div class="footer-content wrapper-content">
+        <div class="footer-content wrapper-content">
             <div>
-                <div class="logo">PEI-YUN</div>
-                <div class="footer__license">© 2021 PEIYUN,LEE</div>
+                <div class="logo">JiunShiang</div>
+                <div class="footer__license">© 2021 JiunShiang,Shi</div>
             </div>
-            <nav>
+            
+                <nav>
                 <div class="footer-nav-list">
                     <div class="footer-nav-list__title">NAVIGATION</div>
-                    <a href="" class="footer-nav-list__text link-text">HOME</a>
-                    <a href="" class="footer-nav-list__text link-text">ABOUT</a>
-                    <a href="" class="footer-nav-list__text link-text">WORKS</a>
+                    <a href="#1" class="footer-nav-list__text link-text">HOME</a>
+                    <a href="#2" class="footer-nav-list__text link-text">ABOUT</a>
+                    <a href="#3" class="footer-nav-list__text link-text">WORKS</a>
                 </div>
                 <div class="footer-nav-list">
                     <div class="footer-nav-list__title">SOCIAL</div>
-                    <a href="" class="footer-nav-list__text link-text">Github</a>
-                    <a href="" class="footer-nav-list__text link-text">Codepen</a>
-                    <a href="" class="footer-nav-list__text link-text">Medium</a>
+                    <a href="https://github.com/JiunShiang880109" class="footer-nav-list__text link-text">Github</a>
+                    <!--<a href="" class="footer-nav-list__text link-text">Codepen</a>
+                    <a href="" class="footer-nav-list__text link-text">Medium</a>-->
+
                 </div>
                 <div class="footer-nav-list">
                     <div class="footer-nav-list__title">CONTACT</div>
-                    <a href="" class="footer-nav-list__text link-text">Facebook</a>
-                    <div class="footer-nav-list__text">may1092200258@gmail.com</div>
-                </div>
+                    <a href="https://www.facebook.com/profile.php?id=100002771243799" class="footer-nav-list__text link-text">Facebook</a>
+                    <div class="footer-nav-list__text">ss83323038ss@gmail.com</div>
+            </div>
             </nav>
-        </div> -->
+        </div>
+  
     </footer>
 </body>
 <script src="js/index.js"></script>
